@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+# This script converts a XML file to CSV format.
+
+# Load the AnyData XML to CSV conversion modules
+use XML::Parser;
+use XML::Twig;
+use AnyData;
+
+my $input_xml = "test.xml";
+my $output_csv = "test.csv";
+
+
+$flags->{record_tag} = 'ITEM';
+adConvert( 'XML', $output_file_xml, 'CSV', $output_csv, $flags );
