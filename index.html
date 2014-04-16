@@ -17,10 +17,10 @@
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 	var venueLayer = new google.maps.FusionTableLayer({
 		query: {
-			select: 'Location'
-			from: '10FD-KRz1QHFEMWd2McOSmgeqJCdFYHTkZyDjBCLs'
+			select: 'Location',
+			from: '10FD-KRz1QHFEMWd2McOSmgeqJCdFYHTkZyDjBCLs',
 			where: 'VenueID = 0000000001'
-			}
+			},
 		});
 		
 	venueLayer.setMap(map);
