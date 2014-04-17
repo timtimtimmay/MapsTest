@@ -1,0 +1,19 @@
+<RegionEventInfo>
+
+  <Cities>
+    <City CityID="14716" Name="Clayton" State="MO" Country="United States" Latitude="38.64313" Longitude="-90.353469" Url="http://www.pollstar.com/resultsCity.aspx?ID=14716&source=api23511"/>
+  </Cities>
+  
+  <Venues>
+    <Venue VenueID="45311" Name="Edward Jones Dome At America's Ctr." Address1="701 Convention Plaza" Address2="" Zip="63101" CityID="49665" PhoneAreaCode="314" PhoneNumber="1234567" Email="bilbo@theshire.com" Website="www.transworlddome.org" Latitude="38.631917" Longitude="-90.189279" Distance="2.303905" Url="http://www.pollstar.com/resultsVenue.aspx?ID=45311&source=api23511"/>
+  </Venues>
+  
+  <Events>
+    <Event EventID="2159322" VenueID="45806" PlayDate="2014-04-16" Name="Poncho Sanchez at Jazz At The Bistro" Url="http://www.pollstar.com/event.aspx?ID=2159322&source=api23511">
+      <Artists>
+        <Artist ArtistID="24647" ArtistName="Poncho Sanchez" Code="H" Seq="1"/>
+      </Artists>
+    </Event>
+  </Events>
+  
+</RegionEventInfo>
