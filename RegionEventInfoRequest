@@ -1,11 +1,13 @@
+<script>
+/*
 //Pass LatLng for use in request
 //Pass startDate from date on homepage
 //Pass map zoom and use to set radius
 //Send url using http GET
 
 //http://data.pollstar.com/api/pollstar.asmx/RegionEvents?lat=36.7477778&lng=-119.7713889&radius=10&onlyVenuesWithEvents=1&startDate=4/30/2014&dayCount=0&apiKey=23511-8040658
+*/
 
-<script>
 var xmlHttp = null;
 
 function GetEventInfo(map)
