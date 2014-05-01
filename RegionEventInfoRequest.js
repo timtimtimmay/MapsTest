@@ -9,6 +9,7 @@ http://data.pollstar.com/api/pollstar.asmx/RegionEvents?lat=36.7477778&lng=-119.
 */
 
 var xmlHttp = null;
+var xmlResponse = null;
 
 function GetEventInfo(map)
 {
@@ -23,7 +24,7 @@ function GetEventInfo(map)
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", Url, false );
     xmlHttp.send( null );
-    return xmlHttp.responseText;
+    xmlResponse = xmlHttp.responseText;
 }
 
 function ProcessRequest() 
