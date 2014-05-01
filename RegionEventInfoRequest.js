@@ -21,7 +21,7 @@ function GetEventInfo(map)
     var Radius = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
     var StartDate = "5/1/2014" //document.getElementById( "TextBoxCustomerNumber" ).value;
     
-    var Url = "http://data.pollstar.com/api/pollstar.asmx/RegionEvents?lat=" + Lat + "&lng= + Lng + "&radius=" + Radius[19-Zoom] + "&onlyVenuesWithEvents=1&startDate=" + StartDate + "&dayCount=0&apiKey=23511-8040658";
+    var Url = "http://data.pollstar.com/api/pollstar.asmx/RegionEvents?lat=" + Lat + "&lng=" + Lng + "&radius=" + Radius[19-Zoom] + "&onlyVenuesWithEvents=1&startDate=" + StartDate + "&dayCount=0&apiKey=23511-8040658";
 
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", Url, false );
