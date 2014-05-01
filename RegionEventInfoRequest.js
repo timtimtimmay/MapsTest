@@ -5,14 +5,16 @@ Pass startDate from date on homepage
 Pass map zoom and use to set radius
 Send url using http GET
 
+Parse XML response into Insert statement into Fusion Table
+
 http://data.pollstar.com/api/pollstar.asmx/RegionEvents?lat=36.7477778&lng=-119.7713889&radius=10&onlyVenuesWithEvents=1&startDate=4/30/2014&dayCount=0&apiKey=23511-8040658
 */
 
-var xmlHttp = null;
-var xmlResponse = null;
+
 
 function GetEventInfo(map)
 {
+    var xmlHttp = null;
     var Lat = map.lat();
     var Lng = map.lng();
     var Zoom = map.getZoom();
@@ -24,9 +26,10 @@ function GetEventInfo(map)
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", Url, false );
     xmlHttp.send( null );
-    xmlResponse = xmlHttp.responseText;
+    return xmlHttp.responseText;
 }
 
+/*
 function ProcessRequest() 
 {
     if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ) 
@@ -46,4 +49,5 @@ function ProcessRequest()
         }                    
     }
 }
+*/
 </script>
