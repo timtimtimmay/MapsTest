@@ -25,12 +25,14 @@
         xmlDoc.loadXML(xmlResponse); 
     }
     
-    x=xmlDoc.getElementsByTagName("Venue");
-    for (i=0;i<x.length;i++)
+    x=xmlDoc.getElementsByTagName("Venue")[0].getAttribute("Name");
+    document.write(x);
+    /*for (i=0;i<x.length;i++)
     { 
         document.write(x[i].childNodes[0].getAttribute("Name"));
         document.write("<br>");
     }
+    */
 //}
 
 </script>
