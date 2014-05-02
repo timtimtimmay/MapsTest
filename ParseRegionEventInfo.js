@@ -1,3 +1,5 @@
+<html>
+<head>
 <script>
 function parseXMLResponse(){
     
@@ -28,3 +30,8 @@ function parseXMLResponse(){
         document.write("<br>");
     }
 </script>
+</head>
+<body>
+
+</body>
+</html>
