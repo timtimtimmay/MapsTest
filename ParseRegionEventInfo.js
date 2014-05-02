@@ -21,15 +21,10 @@ function parseXMLResponse(){
         xmlDoc.loadXML(xmlResponse); 
     }
     
-    /*
-    Loop through XML text and output values
-    */
-    for (i=0;i<xmlDoc.length;i++)
-    {
-        document.write(x[i].nodeName);
-        document.write(": ");
+    x=xmlDoc.getElementsByTagName("venue");
+    for (i=0;i<x.length;i++)
+    { 
         document.write(x[i].childNodes[0].nodeValue);
         document.write("<br>");
     }
-}
 </script>
