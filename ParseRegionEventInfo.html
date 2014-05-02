@@ -25,10 +25,10 @@
         xmlDoc.loadXML(xmlResponse); 
     }
     
-    x=xmlDoc.getElementsByTagName("venue");
+    x=xmlDoc.getElementsByTagName("Venue");
     for (i=0;i<x.length;i++)
     { 
-        document.write(x[i].childNodes[0].nodeValue);
+        document.write(x[i].childNodes[0].getAttribute("Name"));
         document.write("<br>");
     }
 //}
