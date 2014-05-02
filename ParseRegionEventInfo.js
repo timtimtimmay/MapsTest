@@ -1,3 +1,5 @@
+<script>
+function parseXMLResponse(){
     
     if (window.DOMParser)
     {
@@ -22,3 +24,5 @@ Loop through XML text and output values
         document.write(x[i].childNodes[0].nodeValue);
         document.write("<br>");
     }
+}
+</script>
